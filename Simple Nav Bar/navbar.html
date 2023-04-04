@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navigation Bar</title>
+    <style>
+      .nav-bar {
+        background-color: #3f4ebc;
+        height: 50px;
+        width: 50%;
+      }
+
+      .nav-bar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-bar li {
+        flex: 1;
+        text-align: center;
+      }
+
+      .nav-bar a {
+        color: #fff;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+      }
+
+      .nav-bar li.dropdown {
+        position: relative;
+      }
+
+      .nav-bar ul.dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #616ed4;
+        width: 100%;
+      }
+
+      .nav-bar li.dropdown:hover ul.dropdown-menu {
+        display: block;
+        color: white;
+      }
+
+      .nav-bar li.dropdown:hover ul.dropdown-menu li:hover {
+        background-color: #3543ad;
+        color: #616ed4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li class="dropdown">
+          <a href="#">PRODUCTS &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">PRODUCT 1</a></li>
+            <li><a href="#">PRODUCT 2</a></li>
+            <li><a href="#">PRODUCT 3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">SERVICES &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">WEB DESIGN</a></li>
+            <li><a href="#">WEB DEVELEOPMENT</a></li>
+            <li><a href="#">WEB CUSTOMIZATION</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">BLOG</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
