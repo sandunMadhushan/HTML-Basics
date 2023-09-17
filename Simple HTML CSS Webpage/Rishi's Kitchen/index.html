@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rishi's Kitchen</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+      * {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+      }
+      .marquee {
+        display: flex;
+        background-color: #333;
+        color: #fff;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        overflow: hidden;
+      }
+      .marquee a{
+        text-decoration: none;
+        color: #fff;
+      }
+      .nav {
+        display: flex;
+        justify-content: right;
+      }
+      .navbar {
+        width: 100%;
+        font-family: "Ubuntu", sans-serif;
+        transition: all 0.3s ease;
+        display: flex;
+      }
+
+      .navbar .max-width {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar .menu li {
+        list-style: none;
+        display: inline-block;
+      }
+      .navbar .menu li a {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+        text-decoration: none;
+        color: #fff;
+      }
+      .navbar .menu li a:hover {
+        color: crimson;
+      }
+      .navbar.sticky .menu li a:hover {
+        color: #fff;
+      }
+      .wrapper {
+        background-color: #f2f2f2; 
+        padding: 20px;
+      }
+      .home {
+        align-content: center;
+        margin-bottom: 50px;
+      }
+      .home img{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .aboutme {
+        margin-right: 10px;
+        padding-top: 120px;
+      }
+      .recipes {
+        padding-top: 120px;
+      }
+      .team {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .contact {
+        padding-top: 110px;
+      }
+      .contct-sec {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .contact-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            padding-top: 120px;
+            padding-bottom: 120px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-column {
+            flex-basis: 24%; 
+            text-align: center;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            margin-bottom: 10px; 
+        }
+
+        .contact-label {
+            font-weight: bold;
+        }
+        .contact-section a {
+        text-decoration: none;
+        color: #000000;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="marquee" id="home">
+      <a href="./index.html"><div style="display: flex">
+        <img src="./images/logo.jpg" width="100" />
+        <h1>
+          <font size="12" face="Rancho">Rishi's Kitchen</font>
+        </h1>
+      </div></a>
+      
+      <div class="nav">
+        <nav class="navbar">
+          <div class="max-width">
+            <ul class="menu">
+              <li><a href="#" class="menu-btn">Home</a></li>
+              <li><a href="#about" class="menu-btn">About</a></li>
+              <li><a href="#recipes" class="menu-btn">Recipes</a></li>
+              <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="home">
+        <h1 style="margin-bottom: 50px">
+          Ayubowan! Welcome to Rishi's Kitchen
+        </h1>
+        <img src="./images/home-image1.jpg" style="display: flex;"/>
+      </div>
+      <div class="aboutme" id="about">
+        <h2>About me</h2>
+        <center>
+          <font size="12" face="Rancho">Risandhi Hewawasam</font>
+        </center>
+        <br>
+        <p>
+          Ayubowan! Welcome to Rishi's kitchen. I am really glad to be able to
+          share my passion of cooking with all of you. Don't you think it would
+          be quite useful if we have a collection of recipes. Instead of
+          including only my recipes I thought it I would be great if all of us
+          can share all of our favourite receipes. Let's all get together and
+          create a whole collection of wonderful recipes, that all of us can
+          enjoy. So please take a few minutes of your time and post your
+          favourite recipe here soon. If you would like to share a picture of a
+          recipe that is online, please email it to me. Be sure to include your
+          name, and the recipe name. Please send me your comments and
+          suggestions. Email me.
+          <a href="mailto:rishisun24@gmail.com">rishisun24@gmail.com</a>
+        </p>
+      </div>
+      <div class="recipes" id="recipes">
+        <h2 style="padding-bottom: 50px;">Recipes</h2>
+        <br>
+        <a href="./recipes/pizza.html"> <img src="./images/image1.jpg" width="350" height="350"/>
+        </a>
+        <a href="./recipes/chccake.html"> 
+          <img src="./images/image2.jpg" width="350" height="350"/>
+        </a>
+        <a href="./recipes/chrpudiing.html"> <img src="./images/image3.jpg" width="350" height="350"/>
+        </a>
+      </div>
+
+      <section id="contact" class="contact">
+        <h2 style="padding-bottom: 50px">Contact</h2>
+      </section>
+      <section>
+      <div class="contact-section">
+        <div class="contact-column">
+            <i class="fas fa-user contact-icon"></i>
+            <div class="contact-label">Name</div>
+            <div>Risandhi Hewawasam</div>
+        </div>
+        <div class="contact-column">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div class="contact-label">Address</div>
+            <div>Kandy Rd, Matale</div>
+        </div>
+        <div class="contact-column">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div class="contact-label">Email</div>
+            <div><a href="mailto:rishisun24@gmail.com">rishisun24@gmail.com</a></div>
+        </div>
+        <div class="contact-column">
+            <i class="fas fa-phone contact-icon"></i>
+            <div class="contact-label">Telephone</div>
+            <div>0711234567</div>
+        </div>
+    </div>
+      </section>
+      <section>
+        <div style="padding-top: 150px;">
+          <div>
+      </section>
+    </div>
+  </body>
+</html>
